@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenis Scholl</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsividade.css">
+    <link rel="stylesheet" href="css/navbar-responsivo.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <script src="https://kit.fontawesome.com/8eb9959284.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <button class="open-form" onclick="openChat()">
+        Mensagem
+    </button>
+    <div class="chat-popup" id="form">
+      <form action="/action_page.php" class="form-container">
+          <h1>Chat</h1>
+          
+          <textarea placeholder="Escreva sua mensagem..." name="message" required></textarea>
+          <button type="submit" class="btn">Enviar</button>
+          <button type="button" class="btn cancel" onclick="closeChat()">Cancelar</button>
+      </form>
+
+    </div>         
+    <div  id="section1">
+        <div class="nav" id="menu">
+            <a href="#section1">Inicio</a>
+            <a href="#section2">Sobre</a>
+            <a href="#section3">Aulas e treinos</a>
+            <a href="#section4">Contato</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+        
+        <div class="text">
+            <div class="saque-image">
+                <img id="saque" src="images/saque.jpg" alt="">
+            </div>
+            <div class="introduction">
+               <div class="title">
+                    <h1>DENILSON<br> <span>TENIS</span></h1>
+                    
+               </div> 
+               <img id="coach" src="images/coach.png" alt="">
+               <p>
+                        Denilson é um profissional formado em educação física e fisioterapia,<br>
+                        que trabalha como treinador de tenis há 20 anos, <br>
+                        formando excelentes tenistas que representam nosso<br> país atuando no circuito
+                        tanto no ATP quanto no WTA. <br>Venha você também fazer parte de nossa história.
+               </p>    
+                <button id="direct"> <a class="direct" href="#section4">Fale Comigo</a>  <i class="fas fa-angle-double-right"></i></button>
+            </div>   
+        </div>            
+    </div>    
+               
+    <div  id="section2">
+        <div class="description">
+            
+                
+                <div class="legend-image">
+                    <img id="voleio" src="images/voleio.jpg" alt="">
+                    <h1>O Professor</h1>
+                    <p>Denilson começou a jogar tênis com 7 anos de idade, 
+                       e se profissionalizou aos 18 anos, participando de forma
+                       competitiva no circuito mundial com alguns titulos
+                       importantes. 
+                       Hoje ele passa seus conhecimentos para seus alunos
+                       com alguns deles já participando de grandes competições 
+                       e com bons resultados.<br>
+                       <br>Venha você também melhorar seu jogo seja para jogar 
+                       profissionalmente ou apenas para se divertir no 
+                       final de semana.</p>  
+                </div>
+            
+
+            
+        </div> 
+        
+    </div>
+
+    <div  id="section3">
+        <h1><span>Aulas&</span>Treinos</h1>
+        <div class="slideshow-box">
+            
+            
+            <img class="slide " src="images/slide3.jpg" alt="">   
+            <img class="slide " src="images/slide4.jpg" alt="">
+            <img class="slide " src="images/slide5.jpg" alt=""> 
+         </div>  
+         
+         <div class="classes">
+           <div class="price">  
+                <h3>Aulas individuais</h3>
+                <p>R$80,00 a hora | R$50,00 por 30 minutos</p>
+                <h3>Aulas em grupo</h3>
+                <p>R$30,00 a hora | R$15,00 por 30 minutos</p>
+                <h3>Treinos</h3>
+                <p> <a id="contact-page" href="#section4">Entre em contato para maiores informações</a> </p>
+            </div> 
+            <div class="location">
+                <h2>As nossas aulas são em academias <br>selecionadas ou, se você preferir,<br> na sua quadra. esta sem tempo?<br> o transito te incomoda? Nós vamos até você.</h2>
+                
+            </div> 
+
+            
+         </div>
+
+         
+    </div>       
+         
+    <div  id="section4">
+              
+             <div class="form-container">
+                <h1>Contato</h1>
+                 <input type="text" name="nome" id="nome" placeholder="Nome">
+                 <input type="email" name="email" id="email" placeholder="Email">
+                 <input type="tel" name="phone" id="telefone" placeholder="Telefone">
+                 <textarea name="subject" id="mensagem" cols="30" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+                 <button class="contact" type="submit">Enviar</button>
+             </div>
+             
+             <div class="email-phone">
+                 <h2>Agende sua primeira aula!</h2>
+                 <h2>
+                     <a href="Tel:11-3896-8945">Tel: 11-3896-8945</a><br>
+                     <a href="mailto:denilson@tenisscholl.com"> Email: denilson@tenisscholl.com</a>
+                 </h2>
+             </div>
+             
+         
+    </div>            
+            
+    <footer>
+        <div class="social-medias"> 
+             <i class="fab fa-facebook-f"></i>
+             <i class="fab fa-instagram"></i>
+        </div>
+        <div class="copyrigth">
+             <i class="far fa-copyright"></i>
+             <span id="madeby">Denilson Tenis | por Marcelo Salmeron</span>
+        </div>
+        
+    </footer>   
+     
+    <script src="scripts/scripts.js"></script> 
+    <script src="scripts/navresponsive.js"></script>   
+</body>
+</html>                               
+               
+            
+            
+        
+        
+
+        
+
+    
+
+    
+          
+                
+            
+                
+            
+              
+            
+                
+            
+       
+
+        
+            
+       
+
+    
+
+    

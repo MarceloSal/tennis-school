@@ -1,0 +1,197 @@
+
+
+@media (max-width:1250px) {
+    #section1 .text {
+        grid-template-columns: auto;
+    }
+
+    .saque-image {
+        order:1;
+    }
+
+    .introduction {
+        order: 2;
+    }
+}
+
+@media (max-width:1024px) { 
+    #section1.text .saque-image {
+         width: 100%; 
+         
+    } 
+
+    #section1.introduction { 
+         width: 100%; 
+                 
+    } 
+
+    #section2 .description #voleio{ 
+        width: 100%; 
+        
+    } 
+
+    .description .picture .text{ 
+        top: -37rem;
+         
+    } 
+}
+
+/* @media(max-width:912px) {
+    #section3 .classes .price h3 p {
+        width: 100%;
+    }
+} */
+
+@media(max-width:885px) {
+    .classes .price {
+        width: 100%;
+    }
+
+    .location {
+        width: 100%;
+    }
+}
+
+
+@media (max-width:768px) { 
+    .description .picture .text{ 
+        top: -28rem;
+         
+    } 
+
+    .email-phone {
+        width: 100%;
+        
+    }
+
+    #section1 .text .introduction #coach {
+        width: 100%;
+    }
+
+    #section3 .slideshow-box {
+        display: none;
+    }
+              
+    .location h2 {
+        font-size: 1.5rem;
+    }
+
+    .email-phone h2 {
+        
+        text-align: center;
+    }
+
+    .email-phone a {
+        
+        text-align: center;
+    }
+
+    footer .social-medias i, #madeby {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:700px) { 
+    #saque{ 
+         display: none; 
+         
+    } 
+
+    .text .introduction {
+        align-content: center;
+    }
+    
+    #section1 .nav {
+        position: relative;
+    }
+
+    #section2 .description {
+        width: 100%;
+    }
+}
+
+@media (max-width:425px) {
+    #section3 .classes .location h2 {
+        font-size: 1rem;
+    }
+
+    footer .social-medias i, #madeby {
+        font-size: 1rem;
+    }
+
+    #section1 .introduction h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:375px) { 
+    .description .picture .text{ 
+        font-size: 1.5rem;
+        top: -9rem; 
+         
+    } 
+
+    #section1 .nav a {
+        font-size: 1rem;
+        
+    }
+
+    .email-phone {
+        width: 100%;
+        
+        
+    }
+
+}
+
+@media (max-width:360px) {
+    footer .social-medias, .copyrigth, i, #madeby {
+        font-size: .8rem;
+    }
+}
+
+
+@media (max-width:320px) { 
+    .description .picture .text{ 
+        font-size: 1rem;
+        top: -10rem; 
+         
+    } 
+
+    .email-phone {
+        width: 100%;
+    }
+
+    .location h2 {
+        font-size: 1.5rem;
+    }
+
+    #section1 .introduction h1 {
+        font-size: 3.5rem;
+    }
+
+    
+}
+
+@media(max-width:280px) {
+    #section1 .introduction .title h1 {
+        font-size: 3rem;
+    }
+
+    #section3 h1 {
+        font-size: 2.2rem;
+    }
+
+    #section4 .email-phone h2 a {
+        font-size: 1.3rem;
+    }
+
+    footer .copyrigth #madeby {
+        font-size: .6rem;
+    }
+}
+
+
+
+
+
