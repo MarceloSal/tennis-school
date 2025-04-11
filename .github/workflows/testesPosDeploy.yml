@@ -5,19 +5,18 @@ on:
     branches:
       - main  # ou 'gh-pages', depende do branch usado no deploy
 
+# .github/workflows/deploy.yml (ou onde estiver o deploy)
 jobs:
-  dispatch-tests:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Disparar testes no StudiesCloud
+      # ... steps do seu deploy
+
+      - name: Trigger Cypress tests in StudiesCloud
         run: |
-          curl -X POST https://api.github.com/repos/MarceloSal/StudiesCloud/dispatches \
-            -H "Accept: application/vnd.github+json" \
-            -H "Authorization: token ${{ secrets.GH_TOKEN }}" \
-            -d '{
-              "event_type": "deploy_finalizado",
-              "client_payload": {
-                "env_url": "https://marcelosal.github.io/tennis-school/"
-              }
-            }'
+          curl -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: Bearer ${{ secrets.STUDIESCLOUD_TOKEN }}" \
+            https://api.github.com/repos/MarceloSal/StudiesCloud/dispatches \
+            -d '{"event_type":"run-tests"}'
+
