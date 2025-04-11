@@ -1,0 +1,23 @@
+name: Disparar testes após deploy
+
+on:
+  push:
+    branches:
+      - main  # ou 'gh-pages', depende do branch usado no deploy
+
+jobs:
+  dispatch-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Disparar testes no StudiesCloud
+        run: |
+          curl -X POST https://api.github.com/repos/MarceloSal/StudiesCloud/dispatches \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: token ${{ secrets.GH_TOKEN }}" \
+            -d '{
+              "event_type": "deploy_finalizado",
+              "client_payload": {
+                "env_url": "https://marcelosal.github.io/tennis-school/"
+              }
+            }'
